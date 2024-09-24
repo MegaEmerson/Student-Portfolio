@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about" class="tab-link active" onclick="showTab(event, 'about')">About</a></li>
+                <li><a href="#education" class="tab-link" onclick="showTab(event, 'education')">Education</a></li>
+                <li><a href="#skills" class="tab-link" onclick="showTab(event, 'skills')">Skills</a></li>
+                <li><a href="#projects" class="tab-link" onclick="showTab(event, 'projects')">Projects</a></li>
+                <li><a href="#contact" class="tab-link" onclick="showTab(event, 'contact')">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="fade-in">Mega Emmerson Ndobe</h1>
+        <p class="fade-in delay">Aspiring Developer | Creative Thinker | mathematician</p>
+    </header>
+
+    <div class="tab-content">
+        <div id="about" class="tab active" style="background-image: url(back.jpg) ;">
+            <h2>About Me</h2>
+            <p class="typewriter">I have a strong passion for computer science and mathematics, which inspire my academic pursuits and career aspirations in technology. I enjoy exploring complex algorithms and mathematical theories, as they enhance my problem-solving skills and analytical thinking. In my leisure time, I find great joy in playing board games and online games, which not only provide entertainment but also challenge my strategic thinking and teamwork abilities. Engaging in these activities allows me to relax while continuously honing my critical thinking skills.</p>
+        </div>
+
+        <div id="education" class="tab" style="background-image: url(back.jpg);">
+            <h2>Education</h2>
+            <ul>
+                <li class="slide-in">Bachelor of Science in Mathematics and Computer Science, University of Limpopo (Expected Graduation: 2025)</li>
+                <li class="slide-in">High School Bachelor,Ximun'wana High School  (Graduated: 2022 where I earned my bachelor pass which opened doors for me to further my studies )</li>
+            </ul>
+        </div>
+
+        <div id="skills" class="tab" style="background-image: url(back.jpg);">
+            <h2>Skills</h2>
+            <div class="skill">
+                <p>HTML</p>
+                <div class="bar"><div class="fill html"></div></div> 
+            </div>
+            <div class="skill">
+                <p>CSS</p>
+                <div class="bar"><div class="fill css"></div></div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="bar"><div class="fill js"></div></div>
+            </div>
+        </div>
+
+        <div id="projects" class="tab" style="background-image: url(back.jpg);">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Library System Management.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+            </div>
+        </div>
+
+        <div id="contact" class="tab" style="background-image: url(back.jpg);">
+            <h2>Contact</h2>
+            <p>Email: ndobemega8@gmail.com</p>
+            <p>Phone: (+27) 63-462-7851</p>
+        </div>
+    </div>
+    <form id="contact-form" onsubmit="sendMessage(event)">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+</div>
+
+    <footer>
+        <p>© 2024 Mega Emmerson</p>
+        <div class="socials">
+            <a href="https://linkedin.com/in/Mega Ndobe" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/MegaEmerson" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/mega_ndobe" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/megandobe_" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>
